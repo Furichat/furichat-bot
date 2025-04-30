@@ -1,0 +1,10 @@
+services:
+  - type: worker
+    name: telegram-bot
+    runtime: python3
+    entrypoint: python main.py
+    envVars:
+      - key: TELEGRAM_TOKEN
+        fromSecret: TELEGRAM_TOKEN
+      - key: PANDASCORE_TOKEN
+        fromSecret: PANDASCORE_TOKEN
