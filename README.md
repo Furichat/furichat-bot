@@ -35,7 +35,9 @@ Antes de começar, você precisará ter:
     ```dotenv
     TELEGRAM_TOKEN=SEU_TOKEN_DO_TELEGRAM
     PANDASCORE_TOKEN=SEU_TOKEN_DA_PANDASCORE
+    WEBHOOK_URL=https://furichat-bot.onrender.com
     ```
+    o WEBHOOK_URL é também o link do servidor online
 
     Substitua `SEU_TOKEN_DO_TELEGRAM` pelo token que você obteve do BotFather e `SEU_TOKEN_DA_PANDASCORE` pelo token da API PandaScore.
 
@@ -47,6 +49,7 @@ Antes de começar, você precisará ter:
     telebot
     python-dotenv
     requests
+    flask
     ```
 
     Em seguida, execute o seguinte comando no terminal para instalar as bibliotecas necessárias:
