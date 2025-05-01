@@ -54,6 +54,7 @@ def index():
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
-    bot.remove_webhook()
-    bot.set_webhook(url=f"{WEBHOOK_URL}/{API_TOKEN}")
+    if WEBHOOK_URL:
+        bot.remove_webhook()
+        bot.set_webhook(url=f"{WEBHOOK_URL}/{API_TOKEN}")
     app.run(host='0.0.0.0', port=port)
